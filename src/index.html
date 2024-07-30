@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,9 +19,68 @@
     </style>
   </head>
   <body id="inter" class="bg-primaryBlack">
+    <!-- navbar -->
+
+    <nav class="shadow-md fixed w-full z-10 top-0 bg-primaryBlack text-white">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <div class="flex items-center">
+          <div class="text-xl font-bold">
+            <h4>NetTracking</h4>
+          </div>
+          <div class="hidden md:flex space-x-4 ml-10">
+            <a href="#features" class="hover:text-gray-400 text-sm">Features</a>
+            <a href="#pricing" class="hover:text-gray-400 text-sm">Pricing</a>
+            <a href="#works" class="hover:text-gray-400 text-sm"
+              >How it works</a
+            >
+            <a href="#testimonial" class="hover:text-gray-400 text-sm"
+              >Testimonial</a
+            >
+            <a href="#faq" class="hover:text-gray-400 text-sm">FAQ</a>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center space-x-4">
+          <button
+            class="px-3 py-1.5 rounded bg-[#1D1F29] text-primaryWhite text-xs font-semibold"
+          >
+            Sign In
+          </button>
+          <button
+            class="px-3 py-1.5 rounded bg-primaryWhite text-[#1D1F29] text-xs font-semibold"
+          >
+            Sign Up
+          </button>
+        </div>
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-white focus:outline-none">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect y="4" width="24" height="2" fill="white"/>
+              <rect y="11" width="24" height="2" fill="white"/>
+              <rect y="18" width="24" height="2" fill="white"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="menu" class="hidden md:hidden bg-white text-primaryBlack">
+        <a href="#features" class="block px-4 py-2 hover:bg-gray-100"
+          >Features</a
+        >
+        <a href="#pricing" class="block px-4 py-2 hover:bg-gray-100">Pricing</a>
+        <a href="#works" class="block px-4 py-2 hover:bg-gray-100"
+          >How it works</a
+        >
+        <a href="#testimonial" class="block px-4 py-2 hover:bg-gray-100"
+          >Testimonial</a
+        >
+        <a href="#faq" class="block px-4 py-2 hover:bg-gray-100">FAQ</a>
+        <a href="#signin" class="block px-4 py-2 hover:bg-gray-100">Sign In</a>
+        <a href="#signup" class="block px-4 py-2 text-white">Sign Up</a>
+      </div>
+    </nav>
+
     <!-- banner -->
     <div
-      class="flex flex-col justify-center space-y-5 max-w-xl mx-auto text-center my-10 p-5 md:p-0"
+      class="flex flex-col justify-center space-y-5 max-w-xl mx-auto text-center my-10 pt-12"
     >
       <h1 class="text-2xl md:text-4xl text-primaryWhite font-bold">
         Content marketing solution & idea of your business
@@ -57,7 +116,7 @@
       </div>
     </div>
     <!-- features -->
-    <div>
+    <section id="features">
       <div
         class="flex flex-col justify-center space-y-5 max-w-xl mx-auto text-center my-10"
       >
@@ -161,8 +220,8 @@
           </p>
         </div>
       </div>
-    </div>
-    <!-- how it works -->
+    </section>
+    <!-- creative solution -->
     <div class="mx-5 md:mx-[135px] md:my-16 h-auto w-auto">
       <div
         class="flex flex-col justify-center space-y-5 w-auto md:max-w-xl mx-auto text-center my-10"
@@ -176,9 +235,7 @@
         </p>
       </div>
       <div class="flex flex-col md:flex-row gap-5 justify-between items-center">
-        <div
-          class="bg-[#1E2029] rounded-[20px] flex-1 p-3 md:p-12"
-        >
+        <div class="bg-[#1E2029] rounded-[20px] flex-1 p-3 md:p-12">
           <div class="flex justify-between gap-3 mt-5 mb-10 md:mb-20">
             <button
               class="text-[8px] md:text-base px-3 md:px-4 py-2 md:py-2 bg-[#4F5054] text-primaryWhite rounded-lg inline-flex gap-2 items-center"
@@ -239,7 +296,8 @@
       </div>
     </div>
     <!-- pricing -->
-    <div
+    <section
+      id="pricing"
       class="flex flex-col justify-center items-center md:my-16 h-auto w-autor"
     >
       <div
@@ -529,9 +587,9 @@
           </button>
         </div>
       </div>
-    </div>
-     <!-- faq -->
-     <div class="mx-0 md:mx-[135px] md:my-16 h-auto w-auto">
+    </section>
+    <!-- faq -->
+    <section id="faq" class="mx-0 md:mx-[135px] md:my-16 h-auto w-auto">
       <div
         class="flex flex-col justify-center space-y-5 w-auto md:max-w-xl mx-auto text-center my-10"
       >
@@ -608,7 +666,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- footer -->
     <footer class="px-20">
       <div class="mx-auto w-full max-w-screen-xl">
@@ -716,4 +774,13 @@
       </div>
     </footer>
   </body>
+  <!-- JavaScript for menu toggle -->
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
 </html>
