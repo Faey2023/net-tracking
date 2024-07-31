@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-pagination-bullet-active {
+  background: #65697a !important;
+}
+
+.swiper-pagination-bullet {
+  background: #3c3e4a !important;
+}
+
+.swiper-slide-active .card-inside {
+  background: #1e2029;
+  border: none;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NetTracking</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="input.css" />
     <link rel="stylesheet" href="output.css" />
     <link
       rel="shortcut icon"
@@ -39,6 +39,9 @@
           </div>
           <div class="hidden md:flex space-x-4 ml-10">
             <a href="#features" class="hover:text-gray-400 text-sm">Features</a>
+            <a href="#solutions" class="hover:text-gray-400 text-sm"
+              >Solutions</a
+            >
             <a href="#works" class="hover:text-gray-400 text-sm"
               >How it works</a
             >
@@ -85,6 +88,9 @@
           >How it works</a
         >
         <a href="#pricing" class="block px-4 py-2 hover:bg-gray-100">Pricing</a>
+        <a href="#solutions" class="block px-4 py-2 hover:bg-gray-100"
+          >Solutions</a
+        >
         <a href="#testimonial" class="block px-4 py-2 hover:bg-gray-100"
           >Testimonial</a
         >
@@ -96,7 +102,7 @@
     <!-- navbar ends -->
     <!-- banner starts -->
     <div
-      class="flex flex-col justify-center space-y-5 max-w-xl mx-auto text-center my-10 pt-12"
+      class="flex flex-col justify-center space-y-5 max-w-xl mx-5 md:mx-auto text-center my-10 pt-12"
     >
       <h1 class="text-2xl md:text-4xl text-primaryWhite font-bold">
         Content marketing solution & idea of your business
@@ -135,7 +141,7 @@
     <!-- features starts -->
     <section id="features" class="pt-12">
       <div
-        class="flex flex-col justify-center space-y-5 max-w-xl mx-auto text-center my-10"
+        class="flex flex-col justify-center space-y-5 max-w-xl mx-5 md:mx-auto text-center my-10"
       >
         <h1 class="text-2xl md:text-4xl text-primaryWhite font-bold">
           Key Features
@@ -240,9 +246,9 @@
     </section>
     <!-- features ends -->
     <!-- creative solution starts -->
-    <div class="mx-5 md:mx-[135px] md:my-16 h-auto w-auto">
+    <section id="#solutions" class="mx-5 md:mx-[135px] md:my-16 h-auto w-auto">
       <div
-        class="flex flex-col justify-center space-y-5 w-auto md:max-w-xl mx-auto text-center my-10"
+        class="flex flex-col justify-center space-y-5 w-auto md:max-w-xl mx-5 md:mx-auto text-center my-10"
       >
         <h1 class="text-2xl md:text-4xl text-primaryWhite font-bold">
           Creative solutions to expand your business!
@@ -312,13 +318,13 @@
           <img src="./assets/Frame 17.png" alt="" />
         </div>
       </div>
-    </div>
+    </section>
     <!-- creative solution ends -->
     <!-- How it works starts -->
     <section id="works" class="mx-5 md:mx-[135px] md:my-16 h-auto w-auto pt-12">
       <!-- heading -->
       <div
-        class="flex flex-col justify-center space-y-5 w-auto md:max-w-xl mx-auto text-center my-10"
+        class="flex flex-col justify-center space-y-5 w-auto md:max-w-xl mx-5 md:mx-auto text-center my-10"
       >
         <h2 class="text-2xl md:text-4xl text-primaryWhite font-bold">
           How it works
@@ -420,7 +426,7 @@
       class="flex flex-col justify-center items-center md:my-16 h-auto w-auto pt-5"
     >
       <div
-        class="flex flex-col justify-center text-cente space-y-5 w-auto md:max-w-xl mx-auto text-center my-10"
+        class="flex flex-col justify-center text-cente space-y-5 w-auto md:max-w-xl mx-5 md:mx-auto text-center my-10"
       >
         <h2 class="text-2xl md:text-4xl text-primaryWhite font-bold">
           Our pricing plan
@@ -709,9 +715,9 @@
     </section>
     <!-- pricing ends-->
     <!-- testimonial starts -->
-    <section id="testimonial" class="mt-[108px] relative mx-5 md:mx-28 pt-12">
+    <section id="testimonial" class="relative mx-5 md:mx-28 md:my-10 pt-12">
       <div
-        class="flex flex-col justify-center space-y-5 w-auto md:max-w-xl mx-auto text-center my-10"
+        class="flex flex-col justify-center space-y-5 w-auto mx-5 md:mx-auto text-center"
       >
         <h2 class="text-2xl md:text-4xl text-primaryWhite font-bold">
           Testimonials
@@ -725,15 +731,14 @@
       <div>
         <!-- Swiper -->
         <div
-          class="swiper mySwiper"
-          style="padding-top: 30px; padding-bottom: 30px"
+          class="swiper mySwiper relative"
+          style="padding-top: 30px; padding-bottom: 80px"
         >
           <div class="swiper-wrapper z-10">
-            <!-- slides -->
             <!-- slide 1 -->
-            <div class="swiper-slide px-4">
+            <div class="swiper-slide px-4 2xl:p-0">
               <div
-                class="bg-darkBlack max-w-lg rounded-xl pt-7 pb-6 px-7 relative"
+                class="card-inside bg-transparent border-2 border-[#313239] max-w-[478px] rounded-xl pt-7 pb-6 px-7 relative"
               >
                 <img
                   class="absolute -top-3 right-10"
@@ -750,22 +755,22 @@
                 >
                   NetTracking is a B2B marketing software for telecommunications
                   industry. This realtime cloud-based solution tracks your leads
-                  and works on many.
+                  and works on many
                 </p>
                 <div>
                   <h4 class="text-[#CACACA] text-base md:text-lg font-bold">
                     John Smith
                   </h4>
                   <p class="text-[#696B76] text-[10px] md:text-xs font-medium">
-                    UIHUT Company
+                    Codelabs Digital
                   </p>
                 </div>
               </div>
             </div>
             <!-- slide 2 -->
-            <div class="swiper-slide px-4">
+            <div class="swiper-slide px-4 2xl:p-0">
               <div
-                class="bg-darkBlack max-w-lg rounded-xl pt-7 pb-6 px-7 relative"
+                class="card-inside bg-transparent border-2 border-[#313239] max-w-[478px] rounded-xl pt-7 pb-6 px-7 relative"
               >
                 <img
                   class="absolute -top-3 right-10"
@@ -789,15 +794,15 @@
                     Mansur
                   </h4>
                   <p class="text-[#696B76] text-[10px] md:text-xs font-medium">
-                    UIHUT Company
+                    Codelabs Digital
                   </p>
                 </div>
               </div>
             </div>
             <!-- slide 3 -->
-            <div class="swiper-slide px-4">
+            <div class="swiper-slide px-4 2xl:p-0">
               <div
-                class="bg-darkBlack max-w-lg rounded-xl pt-7 pb-6 px-7 relative"
+                class="card-inside bg-transparent border-2 border-[#313239] max-w-[478px] rounded-xl pt-7 pb-6 px-7 relative"
               >
                 <img
                   class="absolute -top-3 right-10"
@@ -812,16 +817,112 @@
                 <p
                   class="text-[#696B76] mt-6 mb-7 italic font-medium text-xs md:text-base"
                 >
-                  NetTracking was founded in 1995 to assist companies with
+                  Nettracking was founded in 1995 to assist companies with
                   improving their internet marketing performance. Our team of
-                  award-winning internet.
+                  award-winning internet .
                 </p>
                 <div>
                   <h4 class="text-[#CACACA] text-base md:text-lg font-bold">
                     Sajib Smith
                   </h4>
                   <p class="text-[#696B76] text-[10px] md:text-xs font-medium">
-                    UIHUT Company
+                    Codelabs Digital
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- slide 4 -->
+            <div class="swiper-slide px-4 2xl:p-0">
+              <div
+                class="card-inside bg-transparent border-2 border-[#313239] max-w-[478px] rounded-xl pt-7 pb-6 px-7 relative"
+              >
+                <img
+                  class="absolute -top-3 right-10"
+                  src="./assets/icon (5).png"
+                  alt="quote icon"
+                />
+                <img
+                  class="w-10 md:w-20 h-10 md:h-20"
+                  src="./assets/profile.png"
+                  alt="avatar"
+                />
+                <p
+                  class="text-[#696B76] mt-6 mb-7 italic font-medium text-xs md:text-base"
+                >
+                  NetTracking is a B2B marketing software for telecommunications
+                  industry. This realtime cloud-based solution tracks your leads
+                  and works on many
+                </p>
+                <div>
+                  <h4 class="text-[#CACACA] text-base md:text-lg font-bold">
+                    John Smith
+                  </h4>
+                  <p class="text-[#696B76] text-[10px] md:text-xs font-medium">
+                    Codelabs Digital
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- slide 5 -->
+            <div class="swiper-slide px-4 2xl:p-0">
+              <div
+                class="card-inside bg-transparent border-2 border-[#313239] max-w-[478px] rounded-xl pt-7 pb-6 px-7 relative"
+              >
+                <img
+                  class="absolute -top-3 right-10"
+                  src="./assets/icon (5).png"
+                  alt="quote icon"
+                />
+                <img
+                  class="w-10 md:w-20 h-10 md:h-20"
+                  src="./assets/profile (1).png"
+                  alt="avatar"
+                />
+                <p
+                  class="text-[#696B76] mt-6 mb-7 italic font-medium text-xs md:text-base"
+                >
+                  Customer feedback from the system is help for refining
+                  customer segmentation as well as positioning of brands. Need
+                  to see your leads as the real people.
+                </p>
+                <div>
+                  <h4 class="text-[#CACACA] text-base md:text-lg font-bold">
+                    Mansur
+                  </h4>
+                  <p class="text-[#696B76] text-[10px] md:text-xs font-medium">
+                    Codelabs Digital
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- slide 6 -->
+            <div class="swiper-slide px-4 2xl:p-0">
+              <div
+                class="card-inside bg-transparent border-2 border-[#313239] max-w-[478px] rounded-xl pt-7 pb-6 px-7 relative"
+              >
+                <img
+                  class="absolute -top-3 right-10"
+                  src="./assets/icon (5).png"
+                  alt="quote icon"
+                />
+                <img
+                  class="w-10 md:w-20 h-10 md:h-20"
+                  src="./assets/profile (2).png"
+                  alt="avatar"
+                />
+                <p
+                  class="text-[#696B76] mt-6 mb-7 italic font-medium text-xs md:text-base"
+                >
+                  Nettracking was founded in 1995 to assist companies with
+                  improving their internet marketing performance. Our team of
+                  award-winning internet .
+                </p>
+                <div>
+                  <h4 class="text-[#CACACA] text-base md:text-lg font-bold">
+                    Sajib Smith
+                  </h4>
+                  <p class="text-[#696B76] text-[10px] md:text-xs font-medium">
+                    Codelabs Digital
                   </p>
                 </div>
               </div>
@@ -829,17 +930,48 @@
 
             <!-- slides -->
           </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+
+          <div class="swiper-pagination !text-left ml-5"></div>
+          <div
+            class="swiper-button-next hidden md:flex after:hidden !w-2 !h-[14px] !relative !left-[85%] !top-[72px] mx-5 md:mx-0"
+          >
+            <svg
+              width="9"
+              height="14"
+              viewBox="0 0 9 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 12.3492L5.56507 7L0 1.65083L1.71746 0L9 7L1.71746 14L0 12.3492Z"
+                fill="#ACA6A6"
+              />
+            </svg>
+          </div>
+          <div
+            class="swiper-button-prev hidden md:flex after:hidden !w-2 !h-[14px] !relative !left-[80%] !top-20"
+          >
+            <svg
+              width="9"
+              height="14"
+              viewBox="0 0 9 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 12.3492L3.43493 7L9 1.65083L7.28254 0L0 7L7.28254 14L9 12.3492Z"
+                fill="#ACA6A6"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </section>
     <!-- testimonial ends -->
     <!-- faq starts-->
-    <section id="faq" class="mx-0 md:mx-[135px] md:my-16 h-auto w-auto pt-12">
+    <section id="faq" class="mx-0 md:mx-[135px] md:my-10 h-auto w-auto pt-12">
       <div
-        class="flex flex-col justify-center space-y-5 w-auto md:max-w-xl mx-auto text-center my-10"
+        class="flex flex-col justify-center space-y-5 w-auto md:max-w-xl mx-auto text-center md:mb-10"
       >
         <h2 class="text-2xl md:text-4xl text-primaryWhite font-bold">FAQ</h2>
         <p class="text-xs md:text-base text-gray">
@@ -1046,8 +1178,8 @@
     </section>
     <!-- faq ends -->
     <!-- footer starts -->
-    <footer class="px-20">
-      <div class="mx-auto w-full max-w-screen-xl">
+    <footer>
+      <div class="mx-auto w-full max-w-screen-xl px-8 md:px-20 mt-10">
         <div class="grid grid-cols-2 gap-10 px-4 py-6 lg:py-8 md:grid-cols-4">
           <div class="col-span-2 md:col-span-1">
             <h2 class="mb-6 text-xl font-bold text-primaryWhite">
@@ -1146,10 +1278,12 @@
             </ul>
           </div>
         </div>
-        <p class="text-sm text-center px-4 py-6 bg-darkBlack text-[#5A5C68]">
-          © Copyright 2024 by Codelabs Digital. All right reserved.
-        </p>
       </div>
+      <p
+        class="text-sm w-full text-center px-4 py-6 bg-darkBlack text-[#5A5C68]"
+      >
+        © Copyright 2024 by Codelabs Digital. All right reserved.
+      </p>
     </footer>
     <!-- footer ends -->
   </body>
