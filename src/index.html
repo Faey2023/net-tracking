@@ -6,6 +6,12 @@
     <title>NetTracking</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="output.css" />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- swiper -->
     <!-- fonts -->
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
@@ -20,7 +26,6 @@
   </head>
   <body id="inter" class="bg-primaryBlack">
     <!-- navbar -->
-
     <nav class="shadow-md fixed w-full z-10 top-0 bg-primaryBlack text-white">
       <div class="container mx-auto flex justify-between items-center p-4">
         <div class="flex items-center">
@@ -83,7 +88,7 @@
         <a href="#signup" class="block px-4 py-2 text-white">Sign Up</a>
       </div>
     </nav>
-
+    <!-- navbar -->
     <!-- banner -->
     <div
       class="flex flex-col justify-center space-y-5 max-w-xl mx-auto text-center my-10 pt-12"
@@ -121,6 +126,7 @@
         </button>
       </div>
     </div>
+    <!-- banner -->
     <!-- features -->
     <section id="features">
       <div
@@ -227,6 +233,7 @@
         </div>
       </div>
     </section>
+    <!-- features -->
     <!-- creative solution -->
     <div class="mx-5 md:mx-[135px] md:my-16 h-auto w-auto">
       <div
@@ -301,6 +308,7 @@
         </div>
       </div>
     </div>
+    <!-- creative solution -->
     <!-- How it works -->
     <section id="works" class="mx-5 md:mx-[135px] md:my-16 h-auto w-auto mt-10">
       <!-- heading -->
@@ -693,6 +701,135 @@
         </div>
       </div>
     </section>
+    <!-- pricing -->
+    <!-- testimonial -->
+    <section id="testimonial" class="mt-[108px] relative mx-5 md:mx-28">
+      <div
+        class="flex flex-col justify-center space-y-5 w-auto md:max-w-xl mx-auto text-center my-10"
+      >
+        <h2 class="text-2xl md:text-4xl text-primaryWhite font-bold">
+          Testimonials
+        </h2>
+        <p class="text-xs md:text-base text-primaryGray">
+          NetTracking is a B2B marketing software for the telecommunications
+          industry.
+        </p>
+      </div>
+
+      <div>
+        <!-- Swiper -->
+        <div
+          class="swiper mySwiper"
+          style="padding-top: 30px; padding-bottom: 30px"
+        >
+          <div class="swiper-wrapper z-10">
+            <!-- slides -->
+            <!-- slide 1 -->
+            <div class="swiper-slide px-4">
+              <div
+                class="bg-[#1E2029] max-w-lg rounded-xl pt-7 pb-6 px-7 relative"
+              >
+                <img
+                  class="absolute -top-3 right-10"
+                  src="/assets/icon (5).png"
+                  alt="quote icon"
+                />
+                <img
+                  class="w-10 md:w-20 h-10 md:h-20"
+                  src="/assets/profile.png"
+                  alt="avatar"
+                />
+                <p
+                  class="text-[#696B76] mt-6 mb-7 italic font-medium text-xs md:text-base"
+                >
+                  NetTracking is a B2B marketing software for telecommunications
+                  industry. This realtime cloud-based solution tracks your leads
+                  and works on many.
+                </p>
+                <div>
+                  <h4 class="text-[#CACACA] text-base md:text-lg font-bold">
+                    John Smith
+                  </h4>
+                  <p class="text-[#696B76] text-[10px] md:text-xs font-medium">
+                    UIHUT Company
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- slide 2 -->
+            <div class="swiper-slide px-4">
+              <div
+                class="bg-[#1E2029] max-w-lg rounded-xl pt-7 pb-6 px-7 relative"
+              >
+                <img
+                  class="absolute -top-3 right-10"
+                  src="/assets/icon (5).png"
+                  alt="quote icon"
+                />
+                <img
+                  class="w-10 md:w-20 h-10 md:h-20"
+                  src="/assets/profile (1).png"
+                  alt="avatar"
+                />
+                <p
+                  class="text-[#696B76] mt-6 mb-7 italic font-medium text-xs md:text-base"
+                >
+                  Customer feedback from the system is help for refining
+                  customer segmentation as well as positioning of brands. Need
+                  to see your leads as the real people.
+                </p>
+                <div>
+                  <h4 class="text-[#CACACA] text-base md:text-lg font-bold">
+                    Mansur
+                  </h4>
+                  <p class="text-[#696B76] text-[10px] md:text-xs font-medium">
+                    UIHUT Company
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- slide 3 -->
+            <div class="swiper-slide px-4">
+              <div
+                class="bg-[#1E2029] max-w-lg rounded-xl pt-7 pb-6 px-7 relative"
+              >
+                <img
+                  class="absolute -top-3 right-10"
+                  src="/assets/icon (5).png"
+                  alt="quote icon"
+                />
+                <img
+                  class="w-10 md:w-20 h-10 md:h-20"
+                  src="/assets/profile (2).png"
+                  alt="avatar"
+                />
+                <p
+                  class="text-[#696B76] mt-6 mb-7 italic font-medium text-xs md:text-base"
+                >
+                  NetTracking was founded in 1995 to assist companies with
+                  improving their internet marketing performance. Our team of
+                  award-winning internet.
+                </p>
+                <div>
+                  <h4 class="text-[#CACACA] text-base md:text-lg font-bold">
+                    Sajib Smith
+                  </h4>
+                  <p class="text-[#696B76] text-[10px] md:text-xs font-medium">
+                    UIHUT Company
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- slides -->
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial -->
     <!-- faq -->
     <section id="faq" class="mx-0 md:mx-[135px] md:my-16 h-auto w-auto">
       <div
@@ -772,6 +909,7 @@
         </div>
       </div>
     </section>
+    <!-- faq -->
     <!-- footer -->
     <footer class="px-20">
       <div class="mx-auto w-full max-w-screen-xl">
@@ -888,4 +1026,59 @@
       menu.classList.toggle("hidden");
     });
   </script>
+
+  <!-- slide -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
+      breakpoints: {
+        575: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        1024: {
+          slidesPerView: 2.5,
+          spaceBetween: 0,
+        },
+        1140: {
+          slidesPerView: 2.5,
+          spaceBetween: 0,
+        },
+        1440: {
+          slidesPerView: 2.5,
+          spaceBetween: 0,
+        },
+      },
+      // navigation: {
+      //   nextEl: ".swiper-button-next",
+      //   prevEl: ".swiper-button-prev",
+      // },
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <!-- slide -->
 </html>
